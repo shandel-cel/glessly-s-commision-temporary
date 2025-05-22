@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Portfolio | Projects</title>
+    <link rel="stylesheet" href="project.css">
+    <!-- Google Fonts for vintage typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="menu-overlay"></div>
+
+    <main>
+        <section class="projects-hero">
+            <div class="hero-content">
+                <h2>My Projects</h2>
+                <p class="tagline">A collection of vintage-inspired web designs and developments</p>
+            </div>
+        </section>
+
+        <section class="projects-filter">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <article class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="project1.jpg" alt="Vintage E-commerce Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Live</a>
+                            <a href="#" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Prototyping And Wireframe Design</h3>
+                    <p>This is a project that I did for my subject, Prototyping And Wireframe Design.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="development">
+                <div class="project-image">
+                    <img src="project2.jpg" alt="Portfolio Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Live</a>
+                            <a href="#" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A vintage-themed portfolio website showcasing creative works.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="ui">
+                <div class="project-image">
+                    <img src="project3.jpg" alt="Vintage Blog Design">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Live</a>
+                            <a href="#" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Vintage Blog Design</h3>
+                    <p>A classic blog layout with modern functionality and vintage aesthetics.</p>
+                    <div class="project-tags">
+                        <span class="tag">UI Design</span>
+                        <span class="tag">WordPress</span>
+                        <span class="tag">Custom Theme</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Add more project cards as needed -->
+        </section>
+
+        <section class="project-cta">
+            <div class="cta-content">
+                <h2>Have a Project in Mind?</h2>
+                <p>Let's create something beautiful together with a touch of vintage charm.</p>
+                <a href="contact.html" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/aguilarglessly707/" class="social-link">Instagram</a>
+                    <a href="https://github.com/" class="social-link">GitHub</a>
+                    <a href="https://x.com/leslyA96461" class="social-link">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vintage Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="menu.js"></script>
+</body>
+</html>
