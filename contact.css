@@ -484,22 +484,61 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive Design */
 @media (max-width: 768px) {
     .main-nav {
-        flex-direction: column;
-        gap: 1rem;
+        padding: 0 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: var(--color-paper);
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        padding: 2rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
         text-align: center;
-        gap: 1rem;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-bottom: 1px solid var(--color-border);
     }
 
     .contact-hero {
         height: 30vh;
+        margin-top: 3.5rem;
+        padding: 0 1rem;
     }
 
     .hero-content h2 {
         font-size: 2rem;
+    }
+
+    .hero-content .tagline {
+        font-size: 1rem;
+    }
+
+    .contact-content {
+        padding: 2rem 1rem;
     }
 
     .contact-container {
@@ -513,14 +552,139 @@ h1, h2, h3, h4, h5, h6 {
 
     .info-card {
         margin-bottom: 2rem;
+        padding: 1.5rem;
+    }
+
+    .info-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .info-item {
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .info-item p {
+        font-size: 0.95rem;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .social-link {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
     }
 
     .contact-form {
-        padding: 2rem;
+        padding: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-group label {
+        font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .contact-map {
+        padding: 2rem 1rem;
     }
 
     .map-container {
         height: 300px;
+    }
+
+    /* Menu Toggle Button */
+    .menu-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    /* Overlay */
+    .menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+
+    .menu-overlay.active {
+        display: block;
+    }
+
+    /* Header adjustments */
+    .main-header {
+        padding: 0.5rem 0;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Additional breakpoint for very small screens */
+@media (max-width: 480px) {
+    .contact-hero {
+        height: 25vh;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .info-card {
+        padding: 1rem;
+    }
+
+    .info-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .info-item {
+        padding: 0.6rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .social-link {
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .map-container {
+        height: 250px;
     }
 }
 
