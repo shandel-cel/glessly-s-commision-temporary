@@ -453,15 +453,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 768px) {
+    .main-nav {
+        padding: 0 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .menu-toggle {
         display: flex;
+        margin-left: auto;
     }
 
     .nav-links {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 80%;
         height: 100vh;
         background-color: var(--color-paper);
         flex-direction: column;
@@ -471,6 +479,7 @@ h1, h2, h3, h4, h5, h6 {
         transition: right 0.3s ease-in-out;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
         z-index: 999;
+        padding: 2rem;
     }
 
     .nav-links.active {
@@ -478,12 +487,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .nav-links li {
-        margin: 0;
+        width: 100%;
+        text-align: center;
     }
 
     .nav-links a {
+        display: block;
+        padding: 1rem;
         font-size: 1.2rem;
-        padding: 1rem 2rem;
+        border-bottom: 1px solid var(--color-border);
     }
 
     /* Hamburger Animation */
@@ -517,11 +529,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Header adjustments for mobile */
     .main-header {
-        padding: 1rem;
-    }
-
-    .main-nav {
-        justify-content: space-between;
+        padding: 0.5rem 0;
     }
 
     .logo h1 {
